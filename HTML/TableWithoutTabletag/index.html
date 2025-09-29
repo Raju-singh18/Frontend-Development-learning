@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table without Table Tag</title>
+    <style>
+        .table {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            border: 1px solid black;
+        }
+        .header, .row {
+            display: contents; /* Makes individual divs behave like table rows/cells */
+        }
+        .cell {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table">
+        <!-- Table Header -->
+        <div class="header">
+            <div class="cell">Header 1</div>
+            <div class="cell">Header 2</div>
+            <div class="cell">Header 3</div>
+        </div>
+
+        <!-- Table Row 1 -->
+        <div class="row">
+            <div class="cell">Row 1, Col 1</div>
+            <div class="cell">Row 1, Col 2</div>
+            <div class="cell">Row 1, Col 3</div>
+        </div>
+
+        <!-- Table Row 2 -->
+        <div class="row">
+            <div class="cell">Row 2, Col 1</div>
+            <div class="cell">Row 2, Col 2</div>
+            <div class="cell">Row 2, Col 3</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formTag</title>
+</head>
+<body>
+    <!-- form attribute
+     1. method="" 2.action="" -->
+      <form action="" action="">
+          <h2>---Enquiry Form---</h2>
+          <!-- label/button/input is a inline element -->
+          <label for="">Name:</label><br/>
+          <input type="text" pattern="[a-zA-Z]{3,40}" placeholder="enter your name" name="uname"/>
+          <br/>
+          <label for="">Email:</label><br>
+          <input type="email" placeholder="enter your email" name="uemail"/>
+          <br/>
+          <label for="">Phone:</label><br>
+          <input type="tel" pattern="[0-9]{10}" title="the the valid phone number with 10 Digits" placeholder="enter your phone" name="uphone"/>  
+          <br/>
+          <label for="">Message:</label> <br>
+          <textarea name="" id=""></textarea> 
+          <br>     
+          <button type="sumbit">Save</button>
+          <input type="submit" value="Go"/>
+      </form>
+
+      <h2>----fieldset:-form ko ghere me dalta hai--- </h2>
+      <fieldset> 
+      <form action="" action="">
+        <h2>Enquiry Form</h2>
+        <!-- label/button/input is a inline element -->
+        <label for="">Name:</label><br/>
+        <input type="text" pattern="[a-zA-Z]{3,40}" placeholder="enter your name" name="uname"/>
+        <br/>
+        <label for="">Email:</label><br>
+        <input type="email" placeholder="enter your email" name="uemail"/>
+        <br/>
+        <label for="">Phone:</label><br>
+        <input type="tel" pattern="[0-9]{10}" title="the the valid phone number with 10 Digits" placeholder="enter your phone" name="uphone"/>  
+        <br/>
+        <label for="">Message:</label> <br>
+        <textarea name="" id=""></textarea> 
+        <br>     
+        <button type="sumbit">Save</button>
+        <input type="submit" value="Go"/>
+     </form>
+    </fieldset>
+     <h2>------legendTag:-heading ko border pe lata hai</h2>
+     <fieldset>
+        <legend>Enquiry Form </legend>
+        <form action="" action="">
+            <!-- label/button/input is a inline element -->
+            <label for="">Name:</label><br/>
+            <input type="text" pattern="[a-zA-Z]{3,40}" placeholder="enter your name" name="uname"/>
+            <br/>
+            <label for="">Email:</label><br>
+            <input type="email" placeholder="enter your email" name="uemail"/>
+            <br/>
+            <label for="">Phone:</label><br>
+            <input type="tel" pattern="[0-9]{10}" title="the the valid phone number with 10 Digits" placeholder="enter your phone" name="uphone"/>  
+            <br/>
+            <label for="">Message:</label> <br>
+            <textarea name="" id=""></textarea> 
+            <br>  
+            <label>Photo</label><br/>
+            <!-- used for choose image from file// pattern=? -->
+            <input type="file"><br/>
+            <label for="">Password</label><br/>
+            <input type="password"><br/>  
+            <button type="sumbit">Save</button>
+            <input type="submit" value="Go"/>
+         </form>
+     </fieldset>
+</body>
+</html>

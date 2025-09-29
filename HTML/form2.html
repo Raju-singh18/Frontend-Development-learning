@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <fieldset>
+        <legend>HRML 5 Form Input</legend>
+        <form action="">
+            NAME: <br/>
+            <input type="text" required minlength="5" maxlength="15"/>
+            <br/>
+            QTY: <br/>
+            <input type="number"/>
+            <br/>
+            QTY: <br/>
+            <input type="number" min="1" max="10"/>
+            <br/>
+            DATE: <br/>
+            <input type="date"/>
+            <br/>
+            TIME: <br/>
+            <input type="time"/>
+            <br/>
+            WEEK: <br/>
+            <input type="week"/>
+            <br/>
+            MONTH: <br/>
+            <input type="month"/>
+            <br/>
+            COLOR: <br/>
+            <input type="color"/>
+            <br/>
+            Url: <br/>
+            <input type="url"/>
+            <br/>
+            Range: <br/>
+            <input type="range"/>
+            <br/>
+            Auto suggestion: <br/>
+            <input type="text" list="course">
+            <!-- datalist is used for suggestion it works when id create, id in datalist and list in input tag should be same -->
+            <datalist id="course">
+                <option value="php">php</option>
+                <option value="html">html</option>
+                <option value="java">java</option>
+                <option value="css">css</option>
+            </datalist><br/>
+            <button>Save</button><br/>
+            <!-- reset is used for empty the form -->
+            <input type="reset" value="Reset"/><br/>
+             <button type="reset">reset</button><br/>
+            <!-- button is normal button -->
+             <button type="button">Save</button>
+        </form>
+    </fieldset>
+</body>
+</html>
