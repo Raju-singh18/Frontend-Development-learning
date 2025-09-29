@@ -1,0 +1,34 @@
+<!-- Values over 100% increases the contrast
+Values under 100% decreases the contrast
+0% will make the image completely gray
+100% is default, and represents the original image -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#img1 {
+  filter: contrast(150%);
+}
+
+#img2 {
+  filter: contrast(50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The contrast() Function</h1>
+
+<p>contrast(150%):</p>
+<img id="img1" src="https://i.ytimg.com/vi/dk1DmJKxNZA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCEfadWOWSPBs1W_ezyNUH9Ws8fsA" alt="Pineapple" width="300" height="300">
+
+<p>contrast(50%):</p>
+<img id="img2" src="https://i.ytimg.com/vi/dk1DmJKxNZA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCEfadWOWSPBs1W_ezyNUH9Ws8fsA" alt="Pineapple" width="300" height="300">
+
+<p>Original image:</p>
+<img src="https://i.ytimg.com/vi/dk1DmJKxNZA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCEfadWOWSPBs1W_ezyNUH9Ws8fsA" alt="Pineapple" width="300" height="300">
+
+</body>
+</html>
+
+

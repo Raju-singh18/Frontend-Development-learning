@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background size</title>
+    <style>
+        #example1 {
+  border: 1px solid black;
+  background: url(https://c8.alamy.com/comp/TACMXH/three-red-rose-flower-buds-and-petals-from-a-vase-TACMXH.jpg);
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+#example2 {
+  border: 1px solid black;
+  background: url(https://c8.alamy.com/comp/TACMXH/three-red-rose-flower-buds-and-petals-from-a-vase-TACMXH.jpg);
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.div1 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div2 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div3 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp);
+  background-repeat: no-repeat;
+}
+#example3 {
+  background: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/products/2022/4/15/2/rx_true-leaf-market_carnation-cancan-scarlet-flower.jpg.rend.hgtvcom.616.616.85.suffix/1650053192495.webp) left top no-repeat, url(https://nurserynisarga.in/wp-content/uploads/2019/09/Desi-Hibiscus-Flower-Plant-04.webp) right bottom no-repeat, url(paper.gif) left top repeat;
+  padding: 15px;
+  background-size: 50px, 130px, auto;
+}
+#full_Image { 
+  background: url(https://t4.ftcdn.net/jpg/01/72/59/13/360_F_172591390_FY59Mu6nS3CynwFTTH0xtTOOHfT9vbm0.jpg) no-repeat center; 
+  width: 539px;
+  height: 360px;
+  /*fixed ke saath background color work nahi karta*/
+  background-size: cover;
+}
+
+    </style>
+</head>
+<body>
+    <h1>The background-size Property</h1>
+
+    <p>Resized background-image:</p>
+    <div id="example1">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <p>Original size of the background-image:</p>
+    <div id="example2">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, ipsam. Dolorem, sit nihil. Consectetur praesentium libero dolores corporis porro nisi cumque itaque modi rerum blanditiis nulla, iste aperiam nostrum facilis.
+      Itaque saepe dignissimos obcaecati aspernatur aut qui sed dolorem, fugiat quo reiciendis quia. Earum placeat, accusamus maxime perspiciatis molestias dolor illo a fugit vitae ipsa, sunt, pariatur deleniti repudiandae nostrum.
+      Earum numquam accusantium excepturi eius ullam omnis beatae rem. Esse animi facilis obcaecati qui consequuntur eos in, dolorem sunt temporibus doloremque nesciunt quas debitis itaque! Dolorum repellat sed corporis nostrum.
+      At quod asperiores dolorem necessitatibus nostrum? Libero, harum ex earum vel rerum repudiandae alias quis laborum ad id dolorum ipsa necessitatibus accusantium, repellendus quia laboriosam, dolores ea sed! Asperiores, sequi?
+      Nisi commodi voluptatum expedita fugit inventore, ex omnis praesentium? Eveniet sed, rem aperiam impedit itaque tempora temporibus, quia vero, quo quasi saepe quis! Molestiae iusto tenetur voluptatum doloremque voluptatem. Unde.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div> 
+    <hr/>
+    <h1>The background-size Property</h1>
+
+<h2>background-size: contain:</h2>
+<div class="div1">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>background-size: cover:</h2>
+<div class="div2">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>No background-size defined:</h2>
+<div class="div3">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Original image:</p>
+<img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt5f18c2119ce26485/6668df65db90945e0caf9be6/beautiful-flowers-lotus.jpg?q=70&width=3840&auto=webp" alt="Flowers" width="224" height="162">
+<hr/>
+<div id="example3">
+    <h1>Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <hr/>
+  <div id="full_Image"> 
+  <h1>Full Page Background Image</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+</body>
+</html>

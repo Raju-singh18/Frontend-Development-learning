@@ -1,0 +1,32 @@
+<!-- Values over 100% will provide brighter results
+Values under 100% will provide darker results
+0% will make the image completely black
+100% is default, and represents the original image -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#img1 {
+  filter: brightness(150%);
+}
+
+#img2 {
+  filter: brightness(50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The brightness() Function</h1>
+
+<p>brightness(150%):</p>
+<img id="img1" src="https://cdn.mos.cms.futurecdn.net/ArLPQLQsE8tR2nGvhmP3Pj-1280-80.jpg" alt="Pineapple" width="300" height="300">
+
+<p>brightness(50%):</p>
+<img id="img2" src="https://cdn.mos.cms.futurecdn.net/ArLPQLQsE8tR2nGvhmP3Pj-1280-80.jpg" alt="Pineapple" width="300" height="300">
+
+<p>Original image:</p>
+<img src="https://cdn.mos.cms.futurecdn.net/ArLPQLQsE8tR2nGvhmP3Pj-1280-80.jpg" alt="Pineapple" width="300" height="300">
+
+</body>
+</html>

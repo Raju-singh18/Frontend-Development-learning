@@ -1,0 +1,23 @@
+<!-- The polygon() function defines a polygon.
+
+The polygon() function contains points that define the polygon. This can be a length or percentage value. Each point is a pair of x and y coordinates. 0 0 defines the left top corner and 100% 100% defines the right bottom corner.
+
+The polygon() function is used within the clip-path property and the shape-outside property. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The polygon() Function</h1>
+
+<img src="https://c8.alamy.com/comp/DC25T5/red-pineapple-ananas-bracteatus-DC25T5.jpg" alt="Pineapple" width="300" height="300">
+
+</body>
+</html>

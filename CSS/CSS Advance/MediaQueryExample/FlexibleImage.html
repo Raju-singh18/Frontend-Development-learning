@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" style="width:100%">
+    <img src="https://media.gettyimages.com/id/908671438/photo/singapore-landmark-city-skyline-at-the-marina-bay-during-sunset-dusk.jpg?s=612x612&w=gi&k=20&c=9jipWebc72bkkYOC0eapOxxMuh6_xDSQbcK2VbpVR6U=" style="width:100%">
+    <img src="https://media.gettyimages.com/id/962771860/photo/aerial-view-singapore-marina-bay-at-dusk.jpg?s=612x612&w=gi&k=20&c=3IVn5v20epxtLaUHhTHH1Ewok9kg01yg3nL2DS9PI7U=" style="width:100%">
+    <img src="https://media.gettyimages.com/id/544220745/photo/singapur-skyline-nachtaufnahme.jpg?s=612x612&w=gi&k=20&c=Fotzo-YNcSB6Kz9vB5uNfuVhqoixs-d9V8I-RajDeWA=" style="width:100%">
+    <img src="https://media.istockphoto.com/id/1399246824/photo/digital-eye-wave-lines-stock-background.jpg?s=612x612&w=0&k=20&c=1cW5xuLcb6HPDj6CLQQFBvGK5_fJvx9eA2egik-3hAc=" style="width:100%">
+    <img src="https://media.istockphoto.com/id/1479180033/photo/digital-eye-ai-artificial-intelligence-digital-concept.jpg?s=612x612&w=0&k=20&c=5s1tl4bpMIVEv4g7Fckl2i26mfs2Rx-LzCtdaqumsz8=" style="width:100%">
+    <img src="https://www.w3schools.com/w3css/img_lights.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfzGg4FAcVgyhVwyPkqrzIA0jt7_p3oTcs4K9zu5x2V1DpwAvGUa5N-tFI6PgAZRKkfMA&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlldFkDjf1ptHI8WiuEPl_CfxOnQlMs4gcEKpkKJwQsB2BVBY5g-yH_zmlAop1PULAlE&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI9RCaHmaI4zOvGBZiwy-K8lIUwIfFJ-_9Hg&s" style="width:100%">
+    <img src="https://img.freepik.com/free-photo/singapore-skyline_1203-7114.jpg?semt=ais_hybrid&w=740" style="width:100%">
+    <img src="https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlzjbfDA0UdzMDX1BPUysHTZcwq9OkGjJRhziWQHJ7nnB1M5gJ25-cpkS9bEAARHDI-k&usqp=CAU" style="width:100%">
+    <img src="https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg" style="width:100%">
+    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" style="width:100%">
+    <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI9RCaHmaI4zOvGBZiwy-K8lIUwIfFJ-_9Hg&s" style="width:100%">
+    <img src="https://st2.depositphotos.com/2235295/6572/i/450/depositphotos_65721219-stock-photo-singapore-bay-and-merlion-statue.jpg" style="width:100%">
+    <img src="https://st.depositphotos.com/1010683/3082/i/450/depositphotos_30827557-stock-photo-singapore-skyline-at-night.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://ik.imagekit.io/serenity/ByteofDev/Blog_Content_Images/tr:f-jpg/speed_up_images_original_R8oje17ew" style="width:100%">
+    <img src="https://st3.depositphotos.com/14847044/17953/i/450/depositphotos_179537462-stock-photo-flying.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI9RCaHmaI4zOvGBZiwy-K8lIUwIfFJ-_9Hg&s" style="width:100%">
+    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" style="width:100%">
+    <img src="https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+    <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
