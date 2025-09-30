@@ -7,3 +7,7 @@ console.log(Number.isInteger(num)); // false
 console.log(Number.isInteger(10));   // true
 console.log(Number.isNaN(NaN)); // true
  
+console.log(num.toExponential(2));//1.23e+1
+console.log(Number.isFinite(num)); //true 
+console.log(Number.parseInt("42"));//42
+console.log(Number.MAX_VALUE);     // 1.7976931348623157e+308
