@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+</head>
+<body>
+  <!-- include header -->
+  <%- include("partials/header") %>
+
+  <h1>User List</h1>
+  <ul>
+    <% users.forEach(user => { %>
+      <li>
+        <strong><%= user.name %></strong> - Age: <%= user.age %>
+      </li>
+    <% }) %>
+  </ul>
+
+  <!-- include footer -->
+  <%- include("partials/footer") %>
+</body>
+</html>
